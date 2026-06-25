@@ -22,7 +22,7 @@ if "%~3"=="" (
 )
 
 set "EXTENSIONS="
-if /i "%TYPE%"=="-all_music" (
+if /i "%TYPE%"=="-all_audio" (
     set "EXTENSIONS=mp3 flac aac wav wma ogg m4a aiff opus alac m4p"
 )
 if /i "%TYPE%"=="-all_video" (
