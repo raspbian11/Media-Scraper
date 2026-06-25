@@ -21,7 +21,6 @@ if "%~3"=="" (
     set "TYPE=%~3"
 )
 
-:: --- RESOLVE TYPE GROUPS ---
 set "EXTENSIONS="
 if /i "%TYPE%"=="-all_music" (
     set "EXTENSIONS=mp3 flac aac wav wma ogg m4a aiff opus alac m4p"
@@ -33,7 +32,7 @@ if /i "%TYPE%"=="-all_immage" (
     set "EXTENSIONS=jpg jpeg png gif bmp tiff webp"
 )
 if "!EXTENSIONS!"=="" (
-    :: Not a group flag — treat as a literal extension
+    :: Not a group flag â€” treat as a literal extension
     set "EXTENSIONS=%TYPE:.=%"
 )
 
